@@ -136,6 +136,10 @@ h3 {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--primary-500);
+}
+
 
 
 

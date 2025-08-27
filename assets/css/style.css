@@ -3,10 +3,8 @@
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    right: 0;
-    left: 0;
     z-index: 10;
     background-color: var(--bg);
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.16);
@@ -184,7 +182,7 @@
 }
 
 .hdsd__container-icon {
-    
+    color: var(--text);
 }
 
 .hdsd__container-img {
@@ -317,4 +315,70 @@
 
 .footer__container-right {
     padding: 0 1.6rem;
+}
+
+/* page 2 */
+.hero-p2 {
+    padding: 8rem 0;
+    border-bottom: solid 0.1rem var(--border);
+}
+
+.hero-p2__container {
+    text-align: center;
+}
+
+.hero-p2__container-h1 {
+    margin-bottom: 2.4rem;
+}
+
+.hero-p2__container-des {
+    color: var(--text);
+    opacity: 80%;
+}
+
+.select {
+    padding: 8rem 0;
+}
+
+.select__container {
+
+}
+
+.select__nav {
+    margin-bottom: 2.4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.select-btn {
+    padding: 0.8rem 1.6rem;
+    border: 0.1rem solid var(--primary-500);
+    color: var(--primary-500);
+}
+
+.select-btn--click {
+    display: block;
+    padding: 0.8rem 1.6rem;
+    background-color: var(--primary-600);
+    color: var(--bg);
+    font-weight: var(--fw-semibold);
+}
+
+.select__list {
+    padding: 1.6rem 0;
+}
+
+.select__item {
+    background-color: var(--bg);
+    border: solid 0.1rem var(--border);
+    border-radius: 1.6rem;
+}
+
+.select__item-img {
+    margin-bottom: 1.2rem;
+    border-radius: 1.2rem;
+}
+
+.select__item-des {
+    
 }
