@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* color*/
+:root {
+    --primary-500: #1e88e5;
+    --secondary: #0D47A1;
+    --accent: #c0c0c0;
+    --bg: #fff;
+    --text: #212121;
+    --border: #e0e0e0;
+    --primary-600: #377EBB;
+    --primary-700: #436C91;
+    --neutral-600: #405466;
+    --neutral-700: #2F363C;
+    --neutral-800: #2B2F33;
+}
+
+/* font */
+:root {
+    /* families */
+    --font-heading: "Montserrat", Roboto, Arial, sans-serif;
+    --font-body: "Inter", Roboto, Arial, sans-serif;
+
+    /* weight */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* desktop size */
+    --fs-h1: 5.6rem;
+    --lh-h1: 6.8rem;
+
+    --fs-h2: 3.2rem;
+    --lh-h2: 4rem;
+
+    --fs-h3: 2.4rem;
+    --lh-h3: 3.2rem;
+
+    --fs-body: 1.6rem;
+    --lh-body: 2.4rem;
+
+    --fs-caption: 1.2rem;
+    --lh-caption: 1.8rem;
+
+    --fs-small: 1.4rem;
+    --lh-small: 2.2rem;
+
+    --fs-btn: 1.6rem;
+    --lh-btn: 2.4rem;
+
+    --fs-nav: 1.6rem;
+    --lh-nav: 2.4rem;
+}
+
+/* mobile override font */
+@media (max-width: 73.9rem) {
+    :root {
+        --fs-h1: 3.2rem;
+        --lh-h1: 4rem;
+
+        --fs-h2: 2.4rem;
+        --lh-h2: 3.2rem;
+
+        --fs-h3: 2rem;
+        --lh-h3: 2.8rem;
+
+        --lh-caption: 1.6rem;
+    }
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    font-weight: var(--fw-bold);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    font-weight: var(--fw-bold);
+}
+
+h3 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+    font-weight: var(--fw-semibold);
+}
+
+.nav {
+    font-size: var(--fs-nav);
+    line-height: var(--lh-nav);
+    font-weight: var(--fw-medium);
+}
+
+.small {
+    font-size: var(--fs-small);
+    line-height: var(--lh-small);
+    font-weight: var(--fw-medium);
+}
+
+.caption {
+    font-size: var(--fs-caption);
+    line-height: var(--lh-caption);
+    font-weight: var(--fw-regular);
+}
+
+.btn {
+    font-size: var(--fs-btn);
+    line-height: var(--lh-btn);
+    font-weight: var(--fw-semibold);
+}
+
+.rm-a-default {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
