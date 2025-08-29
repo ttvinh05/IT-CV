@@ -404,3 +404,114 @@
     margin: 0.8rem 0;
     color: var(--text);
 }
+
+/* Page 3 */
+.form {
+    padding: 8rem 0;
+}
+
+.form__container {
+
+}
+
+.form__breadcrumb {
+    padding: 0 1.6rem;
+    margin-bottom: 2.4rem;
+}
+
+.form__breadcrumb-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.form__breadcrumb-list li:last-child {
+    color: var(--text);
+}
+
+.form__breadcrumb-link {
+    color: var(--primary-500);
+}
+
+.form__breadcrumb-icon {
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.form__main {
+    border: solid 0.1rem var(--border);
+    border-radius: 0.8rem;
+    max-width: 90rem;
+}
+
+.form__content {
+    padding: 2.4rem;
+}
+
+.form__content-info {
+    display: flex;
+    gap: 2rem;
+}
+
+.form__content-img {
+    width: 20%;
+    text-align: center;
+}
+
+.form__content-img img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: solid 0.1rem var(--border);
+}
+
+.form__content-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.form__content-name, .form__content-jobname {
+    width: 100%;
+}
+
+.form-input {
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.8rem;
+    border: solid 0.1rem var(--border);
+}
+
+.form__content-email, .form__content-phone, .form__content-place, .form__content-github {
+    width: calc(50% - 0.4rem);
+}
+
+.form__group {
+    margin-top: 2.8rem;
+}
+
+.form__group-title {
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.form__group-input {
+    width: 100%;
+}
+
+.margin-bottom-8px {
+    margin-bottom: 0.8rem;
+}
+
+.min-height-80px {
+    min-height: 8rem;
+}
+
+textarea {
+    resize: none;
+}
+
