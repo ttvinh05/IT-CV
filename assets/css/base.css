@@ -140,6 +140,16 @@ a:hover {
     color: var(--primary-500);
 }
 
+textarea {
+    resize: none;
+}
+
+.btn-rm-default {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 
 
 
