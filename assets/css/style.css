@@ -176,13 +176,15 @@
 }
 
 .hdsd__container-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    position: relative;
 }
 
 .hdsd__container-icon {
     color: var(--text);
+    cursor: pointer;
 }
 
 .hdsd__container-img {
@@ -194,6 +196,15 @@
     display: block;
     margin: 0 2rem 0 2rem;
     filter: drop-shadow(0 0.6rem 1.6rem rgba(0, 0, 0, 0.12));
+    display: none;
+}
+
+.hdsd__container-img.hdsd__img-active {
+    display: block;
+}
+
+.hdsd__step.hdsd__active .hdsd__step-h3 {
+    color: var(--primary-700);
 }
 
 .faq {
@@ -239,13 +250,18 @@
 
 .faq__content-icon {
     color: var(--neutral-600);
+    transition: transform 0.2s;
+}
+
+.faq__content.faq__content-open .faq__content-icon {
+    transform: rotate(180deg)
 }
 
 .faq__content-answer {
     display: none;
 }
 
-.faq__content-answer--show {
+.faq__content.faq__content-open .faq__content-answer {
     display: block;
     margin-bottom:2rem;
 }
