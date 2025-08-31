@@ -51,62 +51,121 @@
                 <div class="select__container">
                     <div class="row">
                         <div class="col l-12">
-                            <div class="select__nav">
-                                <div class="select-btn small select-btn--click">Chung</div>
-                                <div class="select-btn small">Frontend</div>
-                                <div class="select-btn small">Backend</div>
-                                <div class="select-btn small">Full-stack</div>
-                                <div class="select-btn small">Mobile</div>
-                                <div class="select-btn small">QA</div>
-                                <div class="select-btn small">DevOps/SRE</div>
-                                <div class="select-btn small">Data/AI</div>
+                            <div class="select__nav">                          
+                                <button class="select-btn small btn-active btn-rm-default" data-tab="chung">Chung</button>
+                                <button class="select-btn small btn-rm-default" data-tab="frontend">Frontend</button>
+                                <button class="select-btn small btn-rm-default" data-tab="backend">Backend</button>
+                                <button class="select-btn small btn-rm-default" data-tab="fullstack">Full-stack</button>
+                                <button class="select-btn small btn-rm-default" data-tab="mobile">Mobile</button>
+                                <button class="select-btn small btn-rm-default" data-tab="qa">QA</button>
+                                <button class="select-btn small btn-rm-default" data-tab="devops">DevOps/SRE</button>
+                                <button class="select-btn small btn-rm-default" data-tab="data">Data/AI</button>
                             </div>
                         </div>
                     </div>    
 
-                    <div class="row">
-                        <div class="col l-3">
-                            <a href="page3.html" class="select__item rm-a-default">
-                                <img src="./assets/img/page2.png" alt="" class="select__item-img">
-                                <div class="select__item-des small">Mẫu CV 1 trang</div>
-                            </a>
-                        </div>
-
-                        <div class="col l-3">
-                            <a href="" class="select__item rm-a-default">
-                                <img src="./assets/img/page2.png" alt="" class="select__item-img">
-                                <div class="select__item-des small">Mẫu CV 2 trang</div>
-                            </a>
-                        </div>
+                    <div class="tab-panel btn-active" data-panel="chung">
+                        <div class="row">
+                            <div class="col l-3">
+                                <a href="page3.html" class="select__item rm-a-default">
+                                    <img src="./assets/img/page2.png" alt="" class="select__item-img">
+                                    <div class="select__item-des small">Mẫu CV 1 trang</div>
+                                </a>
+                            </div>
     
-                        <div class="col l-3">
-                            <a href="" class="select__item rm-a-default">
-                                <img src="./assets/img/page2.png" alt="" class="select__item-img">
-                                <div class="select__item-des small">Mẫu CV cho Intern</div>
-                            </a>
-                        </div>
+                            <div class="col l-3">
+                                <a href="" class="select__item rm-a-default">
+                                    <img src="./assets/img/page2.png" alt="" class="select__item-img">
+                                    <div class="select__item-des small">Mẫu CV 2 trang</div>
+                                </a>
+                            </div>
+        
+                            <div class="col l-3">
+                                <a href="" class="select__item rm-a-default">
+                                    <img src="./assets/img/page2.png" alt="" class="select__item-img">
+                                    <div class="select__item-des small">Mẫu CV cho Intern</div>
+                                </a>
+                            </div>
+        
+                            <div class="col l-3">
+                                <a href="" class="select__item rm-a-default">
+                                    <img src="./assets/img/page2.png" alt="" class="select__item-img">
+                                    <div class="select__item-des small">Mẫu CV cho Mid</div>
+                                </a>
+                            </div>
+        
+                            <div class="col l-3">
+                                <a href="" class="select__item rm-a-default">
+                                    <img src="./assets/img/page2.png" alt="" class="select__item-img">
+                                    <div class="select__item-des small">Mẫu CV cho Senior</div>
+                                </a>
+                            </div>    
     
-                        <div class="col l-3">
-                            <a href="" class="select__item rm-a-default">
-                                <img src="./assets/img/page2.png" alt="" class="select__item-img">
-                                <div class="select__item-des small">Mẫu CV cho Mid</div>
-                            </a>
+                            <div class="col l-3">
+                                <a href="" class="select__item rm-a-default">
+                                    <img src="./assets/img/page2.png" alt="" class="select__item-img">
+                                    <div class="select__item-des small">Mẫu CV cho Lead / Manager</div>
+                                </a>
+                            </div> 
                         </div>
-    
-                        <div class="col l-3">
-                            <a href="" class="select__item rm-a-default">
-                                <img src="./assets/img/page2.png" alt="" class="select__item-img">
-                                <div class="select__item-des small">Mẫu CV cho Senior</div>
-                            </a>
-                        </div>    
-
-                        <div class="col l-3">
-                            <a href="" class="select__item rm-a-default">
-                                <img src="./assets/img/page2.png" alt="" class="select__item-img">
-                                <div class="select__item-des small">Mẫu CV cho Lead / Manager</div>
-                            </a>
-                        </div> 
                     </div>
+
+                    <div class="tab-panel" data-panel="frontend">
+                        <div class="row">
+                            <div class="col l-12">
+                                <div class="update center">Chưa có mẫu trong mục này</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" data-panel="backend">
+                        <div class="row">
+                            <div class="col l-12">
+                                <div class="update center">Chưa có mẫu trong mục này</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" data-panel="fullstack">
+                        <div class="row">
+                            <div class="col l-12">
+                                <div class="update center">Chưa có mẫu trong mục này</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" data-panel="mobile">
+                        <div class="row">
+                            <div class="col l-12">
+                                <div class="update center">Chưa có mẫu trong mục này</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" data-panel="qa">
+                        <div class="row">
+                            <div class="col l-12">
+                                <div class="update center">Chưa có mẫu trong mục này</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" data-panel="devops">
+                        <div class="row">
+                            <div class="col l-12">
+                                <div class="update center">Chưa có mẫu trong mục này</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" data-panel="data">
+                        <div class="row">
+                            <div class="col l-12">
+                                <div class="update center">Chưa có mẫu trong mục này</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -157,5 +216,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./page2.js"></script>
 </body>
 </html>

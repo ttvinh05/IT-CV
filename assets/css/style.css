@@ -383,9 +383,20 @@
     color: var(--bg);
 }
 
-.select-btn--click {
-    display: block;
-    padding: 0.8rem 1.6rem;
+.tab-panel{
+    display:none;
+}
+
+.tab-panel.btn-active{
+    display:block;
+}
+
+.update {
+    margin-top: 5.6rem;
+    font-weight: var(--fw-medium);
+}
+
+.select-btn.btn-active{
     background-color: var(--primary-600);
     color: var(--bg);
     font-weight: var(--fw-semibold);
