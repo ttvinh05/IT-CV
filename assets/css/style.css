@@ -192,8 +192,7 @@
     aspect-ratio: 3 / 4;     
     max-height: 42rem;                
     height: auto;                     
-    object-fit: contain;              
-    display: block;
+    object-fit: contain;
     margin: 0 2rem 0 2rem;
     filter: drop-shadow(0 0.6rem 1.6rem rgba(0, 0, 0, 0.12));
     display: none;
@@ -491,10 +490,13 @@
 }
 
 .form__content-img img {
+    cursor: pointer;
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
     border: solid 0.1rem var(--border);
+    object-fit: cover;
+    display: block;
 }
 
 .form__content-contact {
@@ -544,11 +546,6 @@
     gap: 1.6rem;
 }
 
-.form__btn-view {
-    color: var(--primary-500);
-    border: solid 0.1rem var(--primary-500);
-}
-
 .form__btn-down {
     background-color: var(--primary-700);
     color: var(--bg);
@@ -559,5 +556,98 @@
     padding: 1.2rem 1.6rem;
     border-radius: 0.8rem;
 }
+
+.cv__avatar {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cv {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.cv__header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cv__headings h1 {
+    margin: 0;
+}
+
+.cv__headings h2 {
+    margin: 0.25rem 0 0 0;
+    opacity: 0.9;
+}
+
+.cv__sections .cv__section {
+    margin-top: 1rem;
+}
+
+.cv__section h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.cv__list {
+    margin: 0 0 0 1.2rem;
+}
+
+#cvPreview {
+    display: none;
+    padding: 2.4rem 0;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+
+    .header,
+    .footer,
+    .form {
+        display: none !important;
+    }
+
+    #cvPreview {
+        display: block !important;
+    }
+
+    .cv {
+        width: 186mm;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    .cv__header,
+    .cv__section,
+    .cv__list,
+    .cv__avatar {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .page-break {
+        break-before: page;
+        page-break-before: always;
+    }
+}
+
+
+
+
 
 

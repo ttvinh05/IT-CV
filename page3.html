@@ -52,14 +52,14 @@
                         <div class="form__main">
                             <div class="form__content">
                                 <div class="form__content-info">
-                                    <div class="form__content-img">
-                                        <img src="" alt="">
-                                        Ảnh đại diện
+                                    <div class="form__content-img" id="avatarBox">
+                                        <img id="avatarImg" src="./assets/img/avatar.png" alt="" data-field="avatar">
+                                        <input id="avatarInput" type="file" accept="image/*" hidden>
                                     </div>
     
                                     <div class="form__content-contact">
-                                        <input type="text" class="form__content-name form-input" placeholder="Họ và tên">
-                                        <input type="text" class="form__content-jobname form-input" placeholder="Vị trí ứng tuyển">
+                                        <input type="text" class="form__content-name form-input" placeholder="Họ và tên" data-field="name">
+                                        <input type="text" class="form__content-jobname form-input" placeholder="Vị trí ứng tuyển" data-field="jobname">
                                         <input type="email" class="form__content-email form-input" placeholder="Email">
                                         <input type="tel" class="form__content-phone form-input" placeholder="Số điện thoại">
                                         <input type="text" class="form__content-place form-input" placeholder="Địa điểm">
@@ -69,7 +69,7 @@
     
                                 <div class="form__group">
                                     <p class="form__group-title">Tóm tắt</p>
-                                    <textarea class="form__group-input form-input min-height-80px" placeholder="2 - 4 dòng nêu điểm mạnh và mục tiêu."></textarea>
+                                    <textarea class="form__group-input form-input min-height-80px" placeholder="2 - 4 dòng nêu điểm mạnh và mục tiêu." data-field="summary"></textarea>
                                 </div>
     
                                 <div class="form__group">
@@ -109,16 +109,29 @@
                             </div>
                         </div>
                     </div>
-                    
+     
                     <div class="col l-12 center">
                         <div class="form__btn">
-                            <button class="form__btn-view btn btn-rm-default">Xem trước</button>
-                            <button class="form__btn-down btn btn-rm-default">Tải xuống</button>
+                            <button id="btnPrint" class="form__btn-down btn btn-rm-default">Tải xuống</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section id="cvPreview">
+            <div class="cv" id="cv">
+                <div class="cv__header">
+                <img class="cv__avatar" id="cvAvatar" alt="">
+                <div class="cv__headings">
+                    <h1 id="cvName"></h1>
+                    <h2 id="cvJob"></h2>
+                    <div class="cv__contacts" id="cvContacts"></div>
+                </div>
+                </div>
+                <div class="cv__sections" id="cvSections"></div>
+            </div>
+        </section>
 
         <div class="footer">
             <div class="grid wide">
@@ -166,5 +179,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./page3.js"></script>
 </body>
 </html>
