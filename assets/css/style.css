@@ -189,8 +189,8 @@
 
 .hdsd__container-img {
     width: clamp(26rem, 24vw, 42rem); 
-    aspect-ratio: 3 / 4;     
-    max-height: 42rem;                
+    aspect-ratio: 3/4;     
+    max-height: 42rem;              
     height: auto;                     
     object-fit: contain;
     margin: 0 2rem 0 2rem;
