@@ -27,9 +27,9 @@
                         </nav>
                     </div>
                     <div class="col l-2">
-                        <a href="" class="header__toggle">
+                        <button class="header__toggle btn-rm-default">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="header__toggle-icon lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -41,9 +41,9 @@
                     <div class="col l-12">
                         <nav class="form__breadcrumb">
                             <ul class="form__breadcrumb-list">
-                                <li><a href="" class="form__breadcrumb-link rm-a-default nav">Chung</a></li>
+                                <li><a id="crumbCat" href="page2.html#chung" class="form__breadcrumb-link rm-a-default nav">Chung</a></li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="form__breadcrumb-icon lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
-                                <li class="small">Mẫu CV 1 trang</li>
+                                <li id="crumbTpl" class="small">Mẫu CV 1 trang</li>
                             </ul>
                         </nav>
                     </div>
@@ -66,43 +66,62 @@
                                         <input type="url" class="form__content-github form-input" placeholder="GitHub">
                                     </div>
                                 </div>
-    
-                                <div class="form__group">
+
+                                <!-- Các mục chung cho cv -->
+                                <div class="form__group" data-section="summary">
                                     <p class="form__group-title">Tóm tắt</p>
                                     <textarea class="form__group-input form-input min-height-80px" placeholder="2 - 4 dòng nêu điểm mạnh và mục tiêu." data-field="summary"></textarea>
                                 </div>
     
-                                <div class="form__group">
+                                <div class="form__group" data-section="skills">
                                     <p class="form__group-title">Kỹ năng</p>
                                     <textarea class="form__group-input form-input min-height-80px" placeholder="Nhóm kỹ năng, công cụ, mức độ."></textarea>
                                 </div>
     
-                                <div class="form__group">
+                                <div class="form__group" data-section="experience">
                                     <p class="form__group-title">Kinh nghiệm</p>
                                     <input type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Công ty · Chức danh">
                                     <input type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Thời gian · Địa điểm">
                                     <textarea class="form__group-input form-input min-height-80px" placeholder="3 bullet mô tả kết quả và đóng góp."></textarea>
                                 </div>
     
-                                <div class="form__group">
+                                <div class="form__group" data-section="projects">
                                     <p class="form__group-title">Dự án</p>
                                     <input type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Tên dự án · Vai trò">
                                     <input type="url" class="form__group-input form-input margin-bottom-8px" placeholder="Link GitHub/Live">
                                     <textarea class="form__group-input form-input min-height-80px" placeholder="3 bullet: mục tiêu, công nghệ, kết quả."></textarea>
                                 </div>
     
-                                <div class="form__group">
+                                <div class="form__group" data-section="education">
                                     <p class="form__group-title">Học vấn</p>
                                     <input type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Trường · Chuyên ngành">
                                     <input type="text" class="form__group-input form-input" placeholder="Thời gian">
                                 </div>
     
-                                <div class="form__group">
+                                <div class="form__group" data-section="certs">
                                     <p class="form__group-title">Chứng chỉ</p>
-                                    <textarea class="form__group-input form-input min-height-80px" placeholder="Liệt kê chứng chỉ liên quan."></textarea>
+                                    <textarea class="form__group-input form-input min-height-80px" placeholder="Liệt kê chứng chỉ liên quan.(IT, Ngoại ngữ)"></textarea>
                                 </div>
     
-                                <div class="form__group">
+                                
+                                <!-- Mục thêm cho intern -->
+                                <div class="form__group" data-section="objective">
+                                    <p class="form__group-title">Mục tiêu thực tập</p>
+                                    <textarea class="form__group-input form-input" placeholder="1-2 câu: mục tiêu, mảng muốn học, giá trị mang lại."></textarea>
+                                </div>
+                                
+                                <div class="form__group" data-section="coursework" data-split="lines">
+                                    <p class="form__group-title">Môn học trọng điểm</p>
+                                    <textarea class="form__group-input form-input" placeholder="Mỗi dòng 1 môn: Cấu trúc dữ liệu, CSDL, Mạng..."></textarea>
+                                </div>
+                                
+                                <div class="form__group" data-section="activities" data-split="lines">
+                                    <p class="form__group-title">Hoạt động / CLB</p>
+                                    <textarea class="form__group-input form-input" placeholder="Mỗi dòng 1 hoạt động: CLB Lập trình — Core member; Hackathon — Top 10..."></textarea>
+                                </div>
+
+                                <!-- Mục này luôn ở cuối -->
+                                <div class="form__group" data-section="links">
                                     <p class="form__group-title">Liên kết</p>
                                     <textarea class="form__group-input form-input min-height-80px" placeholder="LinkedIn · Portfolio · Bài viết."></textarea>
                                 </div>
