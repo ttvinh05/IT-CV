@@ -166,3 +166,20 @@ document.querySelector('.header__toggle')?.addEventListener('click', e => {
   document.documentElement.dataset.theme = next
   localStorage.setItem(KEY, next)
 })
+
+const btn = document.querySelector('.header__mobile-icon')
+const drawer = document.querySelector('.header__mobile-item')
+const overlay = document.querySelector('.overlay')
+
+const open  = () => document.body.classList.add('is-menu-open')
+const close = () => document.body.classList.remove('is-menu-open')
+
+btn?.addEventListener('click', () =>
+  document.body.classList.contains('is-menu-open') ? close() : open()
+)
+overlay?.addEventListener('click', close)
+drawer?.addEventListener('click', e => { if (e.target.matches('a')) close() })
+document.addEventListener('keydown', e => { if (e.key === 'Escape') close() })
+
+document.querySelector('.close')
+  ?.addEventListener('click', () => document.body.classList.remove('is-menu-open'))
