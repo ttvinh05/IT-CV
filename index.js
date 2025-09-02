@@ -49,3 +49,40 @@ document.querySelector('.header__toggle')?.addEventListener('click', e => {
   localStorage.setItem(KEY, next)
 })
 
+const menuBtn  = document.querySelector('.header__mobile-menu')
+const sidebar  = document.querySelector('.header__mobile-sidebar')
+const closeBtn = document.querySelector('.header__mobile-sidebar .lucide-x')
+const overlay  = document.querySelector('.overlay')
+
+const openMenu  = () => {
+  sidebar?.classList.remove('close')
+  sidebar?.classList.add('open')
+  overlay?.classList.add('open')
+}
+
+const closeMenu = () => {
+  sidebar?.classList.remove('open')
+  sidebar?.classList.add('close')
+  overlay?.classList.remove('open')
+}
+
+document.querySelector('.header__mobile-sidebar')?.addEventListener('click', e => {
+  const a = e.target.closest('a')
+  if (!a) return
+
+  const href = a.getAttribute('href') || ''
+  closeMenu() 
+
+  if (href.startsWith('#')) {
+    e.preventDefault()
+    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    history.pushState(null, '', href)
+  }
+})
+
+menuBtn?.addEventListener('click', openMenu)
+closeBtn?.addEventListener('click', closeMenu)
+overlay?.addEventListener('click', closeMenu)
+document.addEventListener('keydown', e => e.key === 'Escape' && closeMenu())
+
+
