@@ -1,7 +1,3 @@
-.app {
-    
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -72,7 +68,7 @@
 
 .header__toggle-icon {
     position: relative;
-    right: 1.2rem;
+    right: 1.6rem;
 }
 
 .header__mobile-menu {
@@ -105,10 +101,6 @@
     padding: 8rem 0;
 }
 
-.hero__container {
-
-}
-
 .hero__left {
     padding: 0 1.6rem;
 }
@@ -116,10 +108,6 @@
 .hero__left-text {
     padding: 0.8rem 0;
     margin-bottom: 4rem;
-}
-
-.hero__left-text h1 {
-    
 }
 
 .hero__left-des {
@@ -179,10 +167,6 @@
     scroll-margin-top: 6rem;
 }
 
-.hdsd__container {
-
-}
-
 .hdsd__container-h2 {
     margin-bottom: 4rem;
     text-align: center;
@@ -216,10 +200,6 @@
     margin-right: 2rem;
     background-color: var(--accent);
     border-radius: 50%;
-}
-
-.hdsd__step-text {
-
 }
 
 .hdsd__step-h3 {
@@ -268,20 +248,8 @@
     scroll-margin-top: 6rem;
 }
 
-.faq__container {
-
-}
-
 .faq__container-h2 {
     text-align: center;
-}
-
-.faq__container-main {
-   
-}
-
-.faq__content {
-    
 }
 
 .faq__content::after {
@@ -328,17 +296,10 @@
     background-color: var(--neutral-700);
 }
 
-.footer__container {
-
-}
-
 .footer__container-left {
     padding: 0 1.6rem;
 }
 
-.footer__logo {
-
-}
 
 .footer__logo-link {
     padding: 0.8rem 0;
@@ -415,10 +376,6 @@
 
 .select .row:last-child > .col {
     margin-bottom: 2.4rem;
-}
-
-.select__container {
-
 }
 
 .select__nav {
@@ -523,10 +480,6 @@
 
 .form__breadcrumb-link {
     color: var(--primary-500);
-}
-
-.form__breadcrumb-icon {
-
 }
 
 .center {
