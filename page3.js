@@ -1,4 +1,3 @@
-// Avatar upload
 const box   = document.getElementById('avatarBox')
 const img   = document.getElementById('avatarImg')
 const input = document.getElementById('avatarInput')
@@ -12,7 +11,6 @@ input?.addEventListener('change', () => {
     r.readAsDataURL(f)
 })
 
-// Template config
 const TEMPLATES = {
     general: { show: ['summary', 'experience', 'projects', 'skills','education','certs','links'] },
     intern:  { show: ['objective','education','coursework','projects','skills','activities','certs','links'] } // KHÔNG có 'experience'
@@ -26,12 +24,12 @@ function getTpl(){
 function reorderForm(tpl){
   const order = TEMPLATES[tpl].show
   const container = document.querySelector('.form__content')
-  // Đưa các nhóm theo đúng thứ tự template
+  
   order.forEach(key=>{
     const el = document.querySelector(`.form__group[data-section="${key}"]`)
     if (el) container.appendChild(el)
   })
-  // Đưa các nhóm còn lại (nếu có) xuống cuối
+  
   document.querySelectorAll('.form__group[data-section]').forEach(el=>{
     if (!order.includes(el.dataset.section)) container.appendChild(el)
   })
@@ -140,7 +138,6 @@ function applyBreadcrumb(){
   if (b){ b.textContent = tpl }
 }
 
-// Init + events
 document.addEventListener('DOMContentLoaded', () => {
   applyBreadcrumb();
   applyTemplate()
