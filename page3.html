@@ -123,6 +123,60 @@
             </div>
         </div>
 
+        <section id="cvPreview">
+            <div class="cv">
+                <div class="cv__header">
+                    <img src="" alt="" class="cv-avatar" data-key="avatar">
+                    <div class="cv__heading">
+                        <h1 data-key="name"></h1>
+                        <h2 data-key="role"></h2>
+                        <div class="cv__contact">
+                            <span data-key="email"></span>
+                            <span data-key="phone"></span>
+                            <span data-key="location"></span>
+                            <span data-key="link"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv__section">
+                    <section class="cv__section-item" data-slot="summary" hidden>
+                        <h3 class="cv__section-title">TÓM TẮT</h3>
+                        <p data-key="summary"></p>
+                    </section>
+
+                    <section class="cv__section-item" data-slot="skills" hidden>
+                        <h3 class="cv__section-title">KỸ NĂNG</h3>
+                        <ul data-key="skills"></ul>
+                    </section>
+
+                    <section class="cv__section-item" data-slot="experience" hidden>
+                        <h3 class="cv__section-title">KINH NGHIỆM</h3>
+                        <div data-key="experience"></div>
+                    </section>
+
+                    <section class="cv__section-item" data-slot="projects" hidden>
+                        <h3 class="cv__section-title">DỰ ÁN</h3>
+                        <div data-key="projects"></div>
+                    </section>
+
+                    <section class="cv__section-item" data-slot="education" hidden>
+                        <h3 class="cv__section-title">HỌC VẤN</h3>
+                        <div data-key="education"></div>
+                    </section>
+
+                    <section class="cv__section-item" data-slot="certs" hidden>
+                        <h3 class="cv__section-title">CHỨNG CHỈ</h3>
+                        <ul data-key="certs"></ul>
+                    </section>
+
+                    <section class="cv__section-item" data-slot="links" hidden>
+                        <h3 class="cv__section-title">LIÊN KẾT</h3>
+                        <ul data-key="links"></ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
         <div class="footer">
             <div class="grid wide">
                 <div class="footer__container row">
