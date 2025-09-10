@@ -517,18 +517,13 @@
     gap: 1.6rem;
 }
 
-.form__btn-view {
-    color: var(--primary-500);
-    border: solid 0.1rem var(--primary-500);
-}
-
 .form__btn-down {
     background-color: var(--primary-700);
     color: var(--bg);
     border: solid 0.1rem var(--primary-700);
 }
 
-.form__btn-view, .form__btn-down {
+.form__btn-down {
     padding: 1.2rem 1.6rem;
     border-radius: 0.8rem;
 }

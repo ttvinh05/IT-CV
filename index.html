@@ -27,7 +27,7 @@
                         </nav>
                     </div>
                     <div class="col l-2">
-                        <a href="" class="header__toggle">
+                        <a href="" class="header__toggle" data-js="dark-toggle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="header__toggle-icon lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
                         </a>
                     </div>
@@ -74,7 +74,7 @@
                                 <div class="hdsd__step">
                                     <div class="hdsd__step-icon">1</div>
                                     <div class="hdsd__step-text">
-                                        <a href="" class="hdsd__step-h3 rm-a-default">
+                                        <a href="" class="hdsd__step-h3 rm-a-default" data-js="hdsd-step1">
                                             <h3>Chọn mẫu</h3> 
                                         </a>
                                         <div class="hdsd__step-des small">Chọn một mẫu CV phù hợp với bạn</div>
@@ -84,7 +84,7 @@
                                 <div class="hdsd__step hdsd__step-margin">
                                     <div class="hdsd__step-icon">2</div>
                                     <div class="hdsd__step-text">
-                                        <a href="" class="hdsd__step-h3 rm-a-default">
+                                        <a href="" class="hdsd__step-h3 rm-a-default" data-js="hdsd-step2">
                                             <h3>Nhập thông tin</h3> 
                                         </a>
                                         <div class="hdsd__step-des small">Điền thông tin cá nhân của bạn </div>
@@ -94,7 +94,7 @@
                                 <div class="hdsd__step">
                                     <div class="hdsd__step-icon">3</div>
                                     <div class="hdsd__step-text">
-                                        <a href="" class="hdsd__step-h3 rm-a-default">
+                                        <a href="" class="hdsd__step-h3 rm-a-default" data-js="hdsd-step3">
                                             <h3>Tải CV</h3> 
                                         </a>
                                         <div class="hdsd__step-des small">Chỉ với một click, bạn đã có một chiếc CV hoàn hảo</div>
@@ -105,9 +105,9 @@
         
                         <div class="col l-7">
                             <div class="hdsd__container-right">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="hdsd__container-icon lucide lucide-circle-chevron-left-icon lucide-circle-chevron-left"><circle cx="12" cy="12" r="10"/><path d="m14 16-4-4 4-4"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" data-js="left-hdsd" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="hdsd__container-icon lucide lucide-circle-chevron-left-icon lucide-circle-chevron-left"><circle cx="12" cy="12" r="10"/><path d="m14 16-4-4 4-4"/></svg>
                                 <img src="./assets/img/Web-Developer-mau-2-453x640.jpg" alt="" class="hdsd__container-img">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="hdsd__container-icon lucide lucide-circle-chevron-right-icon lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" data-js="right-hdsd" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="hdsd__container-icon lucide lucide-circle-chevron-right-icon lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>
                             </div>
                         </div>
                     </div>
@@ -124,35 +124,32 @@
 
                             <div class="faq__container-main">
                                 <div class="faq__content">
-                                    <a href="" class="faq__content-view rm-a-default">
+                                    <a href="" class="faq__content-view rm-a-default" data-js="faq-question">
                                         <div class="faq__content-question body rm-a-default">Có cần tạo tài khoản để tải CV PDF?</div>
     
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="faq__content-icon lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                                     </a>
 
-                                    <!-- Thêm class .faq__content-answer--show để hiện câu trả lời -->
                                     <p class="faq__content-answer">Không, nhập thông tin và tải trực tiếp.</p>
                                 </div>
 
                                 <div class="faq__content">
-                                    <a href="" class="faq__content-view rm-a-default">
+                                    <a href="" class="faq__content-view rm-a-default" data-js="faq-question">
                                         <div class="faq__content-question body rm-a-default">Làm sao xuất CV thành PDF?</div>
     
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="faq__content-icon lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                                     </a>
 
-                                    <!-- Thêm class .faq__content-answer--show để hiện câu trả lời -->
                                     <p class="faq__content-answer">Nhấn “Xem trước” → “In/Tải PDF”. Chọn A4, bật Background graphics, tắt header/footer của trình duyệt nếu có.</p>
                                 </div>
 
                                 <div class="faq__content">
-                                    <a href="" class="faq__content-view rm-a-default">
+                                    <a href="" class="faq__content-view rm-a-default" data-js="faq-question">
                                         <div class="faq__content-question body rm-a-default">Web có gửi dữ liệu lên server không?</div>
     
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="faq__content-icon lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                                     </a>
 
-                                    <!-- Thêm class .faq__content-answer--show để hiện câu trả lời -->
                                     <p class="faq__content-answer">Không. Mọi thông tin ở trên trình duyệt của bạn.</p>
                                 </div>
 
@@ -209,5 +206,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
