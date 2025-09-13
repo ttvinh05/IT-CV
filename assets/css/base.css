@@ -150,6 +150,28 @@ textarea {
     cursor: pointer;
 }
 
+.hdsd-active {
+    color: var(--primary-500) !important;
+}
+
+.arrow_down {
+    transform: rotate(180deg);
+}
+
+:root.dark-mode {
+    --bg: #0F1115;
+    --text: #E6EAF0;
+    --border: #2A3441;
+    --primary-600: #42A5F5;
+    --primary-700: #1976D2;
+    --secondary: #1565C0;
+    --accent: #9AA5B1;
+    --neutral-600: #2A3441;
+    --neutral-700: #202833;
+    --neutral-800: #151B23;
+} 
+
+
 
 
 

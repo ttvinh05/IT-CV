@@ -183,6 +183,7 @@
 
 .hdsd__container-icon {
     color: var(--text);
+    cursor: pointer;
 }
 
 .hdsd__container-img {
@@ -239,10 +240,6 @@
 
 .faq__content-icon {
     color: var(--neutral-600);
-}
-
-.faq__content-answer {
-    display: none;
 }
 
 .faq__content-answer--show {
@@ -526,6 +523,10 @@
 .form__btn-down {
     padding: 1.2rem 1.6rem;
     border-radius: 0.8rem;
+}
+
+.hidden {
+    display: none;
 }
 
 
