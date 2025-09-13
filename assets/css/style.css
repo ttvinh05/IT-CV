@@ -364,7 +364,7 @@
     color: var(--bg);
 }
 
-.select-btn--click {
+.select-active {
     display: block;
     padding: 0.8rem 1.6rem;
     background-color: var(--primary-600);
@@ -528,5 +528,4 @@
 .hidden {
     display: none;
 }
-
 
