@@ -4,6 +4,10 @@ const modeToggle = document.querySelector('.header__toggle')
 const darkIcon = document.querySelector('[data-js="dark-mode"]')
 const lightIcon = document.querySelector('[data-js="light-mode"]')
 
+if(localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark-mode')
+}
+
 modeToggle.addEventListener('click', function(e) {
     let html = document.documentElement
     let dark = html.classList.toggle('dark-mode')
@@ -12,14 +16,6 @@ modeToggle.addEventListener('click', function(e) {
     }
     else {
         localStorage.removeItem('theme')
-    }
-    if(html.classList.contains('dark-mode')) {
-        darkIcon.classList.add('hidden')
-        lightIcon.classList.remove('hidden')
-    }
-    else {
-        darkIcon.classList.remove('hidden')
-        lightIcon.classList.add('hidden')
     }
 })
 

@@ -45,6 +45,18 @@
     color: var(--neutral-600);
 }
 
+.lucide-sun {
+    display: none;
+}
+
+.dark-mode [data-js="dark-mode"] {
+    display: none;
+}
+
+.dark-mode [data-js="light-mode"] {
+    display: block;
+}
+
 .hero {
     padding: 8rem 0;
 }
@@ -588,13 +600,5 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-    }
-
-    .cv__section-item {
-
-    }
-
-    .cv__section-title {
-
     }
 }
