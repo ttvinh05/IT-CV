@@ -1,82 +1,188 @@
-/* desktop */
-const darkmode = document.querySelector('[data-js="dark-toggle"]')
+// Desktop
+// darkmode
+const modeToggle = document.querySelector('.header__toggle')
+const darkIcon = document.querySelector('[data-js="dark-mode"]')
+const lightIcon = document.querySelector('[data-js="light-mode"]')
 
-const breadcrumb = document.querySelector('[data-js="breadcrumb"]')
+modeToggle.addEventListener('click', function(e) {
+    let html = document.documentElement
+    let dark = html.classList.toggle('dark-mode')
+    if (dark) {
+        localStorage.setItem('theme', 'dark')
+    }
+    else {
+        localStorage.removeItem('theme')
+    }
+    if(html.classList.contains('dark-mode')) {
+        darkIcon.classList.add('hidden')
+        lightIcon.classList.remove('hidden')
+    }
+    else {
+        darkIcon.classList.remove('hidden')
+        lightIcon.classList.add('hidden')
+    }
+})
 
-const form = document.querySelector('[data-js="form"]')
+// breadCrumb
+const hash = location.hash.slice(1).split('|')
+const cbPage2 = decodeURIComponent(hash[0])
+const cbName = decodeURIComponent(hash[1])
 
-const avatar = document.querySelector('[data-js="avatar"]')
+document.querySelector('.form__breadcrumb-link').textContent = cbPage2
+document.querySelector('.form__breadcrumb-link').href = 'page2.html#' + encodeURIComponent(cbPage2)
+document.querySelector('[data-js="current-template"]').textContent = cbName
 
-const avatarImg = document.querySelector('[data-js="avatar-img"]')
+if(cbName === 'Mẫu CV cho người có kinh nghiệm') {
+    let internHidden = document.querySelector('[data-js="intern"]')
+    let subjectHidden = document.querySelector('[data-js="subject"]')
+    let activeHidden = document.querySelector('[data-js="active"]')
+    internHidden.classList.add('hidden')
+    subjectHidden.classList.add('hidden')
+    activeHidden.classList.add('hidden')
+}
 
-const avatarInput = document.querySelector('[data-js="avatar-input"]')
+else if(cbName === 'Mẫu CV cho intern') {
+    let expHidden = document.querySelector('[data-js="exp"]')
+    expHidden.classList.add('hidden')
+}
 
-const formName = document.querySelector('[data-js="form-name"]')
+// preview content
+let avatar = document.querySelector('[data-js="avatar-img"]')
+let avatarInput = document.querySelector('#avatar-input')
+let avatarPre = document.querySelector('.cv-avatar')
 
-const formJobname = document.querySelector('[data-js="form-jobname"]')
+avatarInput.addEventListener('change', function(e) {
+    let avatarChange = this.files[0]
+    avatar.src = URL.createObjectURL(avatarChange)
+    avatarPre.src = avatar.src
+})
 
-const formEmail = document.querySelector('[data-js="form-email"]')
+let nameInput = document.querySelector('.form__content-name')
+let namePre = document.querySelector('[data-key="name"]')
+nameInput.addEventListener('input', function(e) {
+    namePre.textContent = e.target.value
+})
 
-const formPhone = document.querySelector('[data-js="form-phone"]')
+let jobnameInput = document.querySelector('.form__content-jobname')
+let jobnamePre = document.querySelector('[data-key="role"]')
+jobnameInput.addEventListener('input', function(e) {
+    jobnamePre.textContent = e.target.value
+})
 
-const formPlace = document.querySelector('[data-js="form-place"]')
+let emailInput = document.querySelector('.form__content-email')
+let emailPre = document.querySelector('[data-key="email"]')
+emailInput.addEventListener('input', function(e) {
+    emailPre.textContent = e.target.value
+})
 
-const formGithub = document.querySelector('[data-js="form-github"]')
+let phoneInput = document.querySelector('.form__content-phone')
+let phonePre = document.querySelector('[data-key="phone"]')
+phoneInput.addEventListener('input', function(e) {
+    phonePre.textContent = e.target.value
+})
 
-const summary = document.querySelector('[data-js="summary"]')
+let placeInput = document.querySelector('.form__content-place')
+let placePre = document.querySelector('[data-key="location"]')
+placeInput.addEventListener('input', function(e) {
+    placePre.textContent = e.target.value
+})
 
-const skill = document.querySelector('[data-js="skill"]')
+let githubInput = document.querySelector('.form__content-github')
+let githubPre = document.querySelector('[data-key="link"]')
+githubInput.addEventListener('input', function(e) {
+    githubPre.textContent = e.target.value
+})
 
-const exp = document.querySelector('[data-js="exp"]')
+let summaryInput = document.querySelector('[name="summary-input"]')
+let summaryPre = document.querySelector('[data-key="summary"]')
+summaryInput.addEventListener('input', function(e) {
+    summaryPre.textContent = e.target.value
+})
 
-const pj = document.querySelector('[data-js="pj"]')
+let internInput = document.querySelector('[name="intern-input"]')
+let internPre = document.querySelector('[data-key="intern"]')
+internInput.addEventListener('input', function(e) {
+    internPre.textContent = e.target.value
+})
 
-const edu = document.querySelector('[data-js="edu"]')
+let skillInput = document.querySelector('[name="skill-input"]')
+let skillPre = document.querySelector('[data-key="skills"]')
+skillInput.addEventListener('input', function(e) {
+    skillPre.textContent = e.target.value
+})
 
-const cert = document.querySelector('[data-js="cert"]')
+let expCompanyInput = document.querySelector('[name="exp-company"]')
+let expTimeInput = document.querySelector('[name="exp-time"]')
+let expBulletInput = document.querySelector('[name="exp-bullet"]')
+let expCompanyPre = document.querySelector('[data-key="expCompany"]')
+let expTimePre = document.querySelector('[data-key="expTime"]')
+let expBulletPre = document.querySelector('[data-key="expBullet"]')
+expCompanyInput.addEventListener('input', function(e) {
+    expCompanyPre.textContent = e.target.value
+})
+expTimeInput.addEventListener('input', function(e) {
+    expTimePre.textContent = e.target.value
+})
+expBulletInput.addEventListener('input', function(e) {
+    expBulletPre.textContent = e.target.value
+})
 
-const link = document.querySelector('[data-js="link"]')
+let pjNameInput = document.querySelector('[name="pj-name"]')
+let pjLinkInput = document.querySelector('[name="pj-link"]')
+let pjBulletInput = document.querySelector('[name="pj-bullet"]')
+let pjNamePre = document.querySelector('[data-key="projectName"]')
+let pjLinkPre = document.querySelector('[data-key="projectLink"]')
+let pjBulletPre = document.querySelector('[data-key="projectBullet"]')
+pjNameInput.addEventListener('input', function(e) {
+    pjNamePre.textContent = e.target.value
+})
+pjLinkInput.addEventListener('input', function(e) {
+    pjLinkPre.textContent = e.target.value
+})
+pjBulletInput.addEventListener('input', function(e) {
+    pjBulletPre.textContent = e.target.value
+})
 
-const downBtn = document.querySelector('[data-js="down-btn"]')
+let eduSchoolInput = document.querySelector('[name="edu-school"]')
+let eduTimeInput = document.querySelector('[name="edu-time"]')
+let eduSchoolPre = document.querySelector('[data-key="eduSchool"]')
+let eduTimePre = document.querySelector('[data-key="eduTime"]')
+eduSchoolInput.addEventListener('input', function(e) {
+    eduSchoolPre.textContent = e.target.value
+})
+eduTimeInput.addEventListener('input', function(e) {
+    eduTimePre.textContent = e.target.value
+})
 
-const avatarPre = document.querySelector('[data-key="avatar"]')
+let subjectInput = document.querySelector('[name="subject-input"]')
+let subjectPre = document.querySelector('[data-key="subject"]')
+subjectInput.addEventListener('input', function(e) {
+    subjectPre.textContent = e.target.value
+})
 
-const namePre = document.querySelector('[data-key="name"]')
+let activeInput = document.querySelector('[name="active-input"')
+let activePre = document.querySelector('[data-key="active"]')
+activeInput.addEventListener('input', function(e) {
+    activePre.textContent = e.target.value
+})
 
-const rolePre = document.querySelector('[data-key="role"]')
+let certInput = document.querySelector('[name="cert-input"]')
+let certPre = document.querySelector('[data-key="certs"]')
+certInput.addEventListener('input', function(e) {
+    certPre.textContent = e.target.value
+})
 
-const emailPre = document.querySelector('[data-key="email"]')
+let linksInput = document.querySelector('[name="link-input"]')
+let linksPre = document.querySelector('[data-key="links"]')
+linksInput.addEventListener('input', function(e) {
+    linksPre.textContent = e.target.value
+})
 
-const phonePre = document.querySelector('[data-key="phone"]')
+// preview 
+let downBtn = document.querySelector('.form__btn-down')
+downBtn.addEventListener('click', function(e) {
+    window.print()
+})
 
-const locationPre = document.querySelector('[data-key="location"]')
 
-const linkPre = document.querySelector('[data-key="link"]')
 
-const summaryPre = document.querySelector('[data-slot="summary"]')
-
-const summaryPre_key = document.querySelector('[data-key="summary"]')
-
-const skillsPre = document.querySelector('[data-slot="skills"]')
-
-const skillsPre_key = document.querySelector('[data-key="skills"]')
-
-const expPre = document.querySelector('[data-slot="experience"]')
-
-const expPre_key = document.querySelector('[data-key="experience"]')
-
-const pjPre = document.querySelector('[data-slot="projects"]')
-
-const pjPre_key = document.querySelector('[data-key="projects"]')
-
-const eduPre = document.querySelector('[data-slot="education"]')
-
-const eduPre_key = document.querySelector('[data-key="education"]')
-
-const certsPre = document.querySelector('[data-slot="certs"]')
-
-const certsPre_key = document.querySelector('[data-key="certs"]')
-
-const linksPre = document.querySelector('[data-slot="links"]')
-
-const linksPre_key = document.querySelector('[data-key="links"]')
