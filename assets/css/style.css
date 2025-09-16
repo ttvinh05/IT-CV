@@ -42,7 +42,7 @@
 }
 
 .header__toggle-icon {
-    color: var(--neutral-600);
+    color: var(--toggle);
 }
 
 .lucide-sun {
@@ -88,7 +88,11 @@
     padding: 1.6rem 3.2rem;
     background-color: var(--primary-700);
     border-radius: 0.8rem;
-    color: var(--bg);
+    color: var(--footer);
+}
+
+.unique:hover {
+    color: var(--btn);
 }
 
 .hero__right {
@@ -207,6 +211,7 @@
     display: block;
     margin: 0 2rem 0 2rem;
     filter: drop-shadow(0 0.6rem 1.6rem rgba(0, 0, 0, 0.12));
+    user-select: none;
 }
 
 .faq {
@@ -251,7 +256,7 @@
 }
 
 .faq__content-icon {
-    color: var(--neutral-600);
+    color: var(--toggle);
 }
 
 .faq__content-answer--show {
@@ -283,7 +288,7 @@
 
 .footer__left-text {
     margin: 1.2rem 0;
-    color: var(--bg);
+    color: var(--footer);
     opacity: 0.7;
 }
 
@@ -296,7 +301,7 @@
 }
 
 .footer__social-icon {
-    color: var(--bg);
+    color: var(--footer);
 }
 
 .lucide-facebook {
@@ -308,7 +313,7 @@
 }
 
 .footer__container-title {
-    color: var(--bg);
+    color: var(--footer);
 }
 
 .footer__container-title p {
@@ -317,7 +322,7 @@
 
 .footer__container-link {
     margin-top: 1.2rem;
-    color: var(--bg);
+    color: var(--footer);
     opacity: 70%;
     display: block;
 }
@@ -412,6 +417,12 @@
     text-align: center;
     margin: 0.8rem 0;
     color: var(--text);
+}
+
+.noSelect {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 /* Page 3 */
@@ -530,13 +541,14 @@
 
 .form__btn-down {
     background-color: var(--primary-700);
-    color: var(--bg);
+    color: var(--footer);
     border: solid 0.1rem var(--primary-700);
-}
-
-.form__btn-down {
     padding: 1.2rem 1.6rem;
     border-radius: 0.8rem;
+}
+
+.form__btn-down:hover {
+    opacity: 0.8;
 }
 
 .hidden {

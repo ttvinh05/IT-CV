@@ -4,10 +4,6 @@ const modeToggle = document.querySelector('.header__toggle')
 const darkIcon = document.querySelector('[data-js="dark-mode"]')
 const lightIcon = document.querySelector('[data-js="light-mode"]')
 
-if(localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark-mode')
-}
-
 modeToggle.addEventListener('click', function(e) {
     let html = document.documentElement
     let dark = html.classList.toggle('dark-mode')
@@ -32,14 +28,25 @@ if(cbName === 'Mẫu CV cho người có kinh nghiệm') {
     let internHidden = document.querySelector('[data-js="intern"]')
     let subjectHidden = document.querySelector('[data-js="subject"]')
     let activeHidden = document.querySelector('[data-js="active"]')
+    let internHiddenPre = document.querySelector('[data-slot="intern"]')
+    let subjectHiddenPre = document.querySelector('[data-slot="subject"]')
+    let activeHiddenPre = document.querySelector('[data-slot="active"]')
+
     internHidden.classList.add('hidden')
     subjectHidden.classList.add('hidden')
     activeHidden.classList.add('hidden')
+
+    internHiddenPre.classList.add('hidden')
+    subjectHiddenPre.classList.add('hidden')
+    activeHiddenPre.classList.add('hidden')
 }
 
 else if(cbName === 'Mẫu CV cho intern') {
     let expHidden = document.querySelector('[data-js="exp"]')
+    let expHiddenPre = document.querySelector('[data-slot="experience"]')
+
     expHidden.classList.add('hidden')
+    expHiddenPre.classList.add('hidden')
 }
 
 // preview content

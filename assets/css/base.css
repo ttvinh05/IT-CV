@@ -23,6 +23,9 @@ html {
     --neutral-600: #405466;
     --neutral-700: #2F363C;
     --neutral-800: #2B2F33;
+    --footer: #fff;
+    --btn: #1e88e5;
+    --toggle: #405466;
 }
 
 /* font */
@@ -169,6 +172,8 @@ textarea {
     --neutral-600: #2A3441;
     --neutral-700: #202833;
     --neutral-800: #151B23;
+    --btn: #c9cdd3;
+    --toggle: #ebe7e7;
 } 
 
 
