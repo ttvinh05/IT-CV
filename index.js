@@ -85,3 +85,39 @@ faq.forEach(function(current, index) {
         answerShow.classList.toggle('hidden')
     })
 })
+
+// Mobile
+// sidebar
+let navbar = document.querySelector('.nav__bar')
+let navbarIcon = document.querySelector('.lucide-menu')
+let x = document.querySelector('.lucide-x')
+let overlay = document.querySelector('.overlay')
+
+navbarIcon.addEventListener('click', function(e) {
+    navbar.classList.toggle('hidden')
+    overlay.classList.remove('hidden')
+    document.documentElement.classList.add('overflow-navbar')
+})
+
+x.addEventListener('click', function(e) {
+    navbar.classList.add('hidden')
+    overlay.classList.add('hidden')
+    document.documentElement.classList.remove('overflow-navbar')
+})
+
+overlay.addEventListener('click', function(e) {
+    overlay.classList.add('hidden')
+    navbar.classList.add('hidden')
+    document.documentElement.classList.remove('overflow-navbar')
+})
+
+let linkMobile = document.querySelectorAll('.nav__bar a')
+
+linkMobile.forEach(function(e) {
+    e.addEventListener('click', function(e) {
+        navbar.classList.toggle('hidden')
+        overlay.classList.toggle('hidden')
+        document.documentElement.classList.remove('overflow-navbar')
+    })
+})
+

@@ -19,24 +19,38 @@
         <div class="header">
             <div class="grid wide">
                 <div class="row header__container">
-                    <div class="col l-2">
+                    <div class="col l-2 c-8 m-8">
                         <div class="header__logo">
                             <a href="index.html" class="header__logo-link nav rm-a-default">IT-CV</a>
                         </div>
                     </div>
-                    <div class="col l-8">
+                    <div class="col l-8 c-0 m-0">
                         <nav class="header__nav">
                             <a href="#select" class="header__nav-link rm-a-default nav">Mẫu CV</a>
                             <a href="index.html#hdsd" class="header__nav-link rm-a-default nav">Hướng dẫn</a>
                             <a href="index.html#faq" class="header__nav-link rm-a-default nav">Câu hỏi thường gặp</a>
                         </nav>
                     </div>
-                    <div class="col l-2">
+                    <div class="nav__bar hidden">
+                        <div class="nav__bar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                        </div>
+                        <a href="#select" class="header__nav-link rm-a-default nav">Mẫu CV</a>
+                        <a href="index.html#hdsd" class="header__nav-link rm-a-default nav">Hướng dẫn</a>
+                        <a href="index.html#faq" class="header__nav-link rm-a-default nav">Câu hỏi thường gặp</a>
+                    </div>
+                    <div class="col l-2 c-2 m-2">
                         <button class="header__toggle btn-rm-default">
                             <svg data-js="dark-mode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="header__toggle-icon lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
                             <svg data-js="light-mode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header__toggle-icon hidden lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
                         </button>
                     </div>
+                    <div class="col l-0 c-2 m-2">
+                        <div class="navbar__menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+                        </div>
+                    </div>
+                    <div class="overlay hidden"></div>
                 </div>
             </div>
         </div>
@@ -44,7 +58,7 @@
         <div class="hero-p2">
             <div class="grid wide">
                 <div class="row hero-p2__container">
-                    <div class="col l-12">
+                    <div class="col l-12 c-12 m-12">
                         <h1 class="hero-p2__container-h1">Tạo CV nhanh chóng và chuyên nghiệp</h1>
                         <p class="hero-p2__container-des">Chọn mẫu CV bạn muốn và bắt đầu ngay bây giờ</p>
                     </div>
@@ -56,7 +70,7 @@
             <div class="grid wide">
                 <div class="select__container">
                     <div class="row">
-                        <div class="col l-12">
+                        <div class="col l-12 c-12 m-12">
                             <div class="select__nav">
                                 <div class="select-btn small select-active" data-js="select-btn">Chung</div>
                                 <div class="select-btn small" data-js="select-btn">Frontend</div>
@@ -71,14 +85,14 @@
                     </div>    
 
                     <div class="row focus" data-select="select-div">
-                        <div class="col l-3">
+                        <div class="col l-3 c-6 m-4">
                             <a href="page3.html#Chung|Mẫu CV cho người có kinh nghiệm" class="select__item rm-a-default">
                                 <img src="./assets/img/hero2.png" alt="" class="select__item-img">
                                 <div class="select__item-des small">Mẫu CV cho người có kinh nghiệm</div>
                             </a>
                         </div>
 
-                        <div class="col l-3">
+                        <div class="col l-3 c-6 m-4">
                             <a href="page3.html#Chung|Mẫu CV cho intern" class="select__item rm-a-default">
                                 <img src="./assets/img/hero3.png" alt="" class="select__item-img">
                                 <div class="select__item-des small">Mẫu CV cho intern</div>
@@ -100,7 +114,7 @@
         <div class="footer">
             <div class="grid wide">
                 <div class="footer__container row">
-                    <div class="col l-4">
+                    <div class="col l-4 c-12 m-12">
                         <div class="footer__container-left">
                             <div class="footer__logo">
                                 <a href="index.html" class="footer__logo-link nav rm-a-default">IT-CV</a>
@@ -118,7 +132,7 @@
                         </div>
                     </div>
 
-                    <div class="col l-4">
+                    <div class="col l-4 c-12 m-6">
                         <div class="footer__container-between">
                             <div class="footer__container-title">
                                 <p class="small">Liên kết nhanh</p>
@@ -130,7 +144,7 @@
                         </div>
                     </div>
 
-                    <div class="col l-4">
+                    <div class="col l-4 c-12 m-6">
                         <div class="footer__container-right">
                             <div class="footer__container-title">
                                 <p class="small">Hỗ trợ</p>
