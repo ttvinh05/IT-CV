@@ -61,7 +61,7 @@
                     <div class="col l-12 c-12 m-12">
                         <nav class="form__breadcrumb">
                             <ul class="form__breadcrumb-list">
-                                <li><a href="" class="form__breadcrumb-link rm-a-default nav">Chung</a></li>
+                                <li><a href="" class="form__breadcrumb-link rm-a-default nav"></a></li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="form__breadcrumb-icon lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
                                 <li class="small" data-js="current-template"></li>
                             </ul>
@@ -91,59 +91,66 @@
                                         </div>
                                     </div>
         
-                                    <div class="form__group" data-js="summary">
-                                        <p class="form__group-title">Tóm tắt</p>
-                                        <textarea name="summary-input" class="form__group-input form-input min-height-80px" placeholder="2 - 4 dòng nêu điểm mạnh và mục tiêu."></textarea>
-                                    </div>
-
-                                    <div class="form__group" data-js="intern">
-                                        <p class="form__group-title">Mục tiêu thực tập</p>
-                                        <textarea name="intern-input" class="form__group-input form-input min-height-80px" placeholder="Mục tiêu thực tập"></textarea>
-                                    </div>
-        
-                                    <div class="form__group" data-js="exp">
-                                        <p class="form__group-title">Kinh nghiệm</p>
-                                        <input name="exp-company" type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Công ty · Chức danh">
-                                        <input name="exp-time" type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Thời gian · Địa điểm">
-                                        <textarea name="exp-bullet" class="form__group-input form-input min-height-80px" placeholder="3 bullet mô tả kết quả và đóng góp."></textarea>
-                                    </div>
-
-                                    <div class="form__group" data-js="skill">
-                                        <p class="form__group-title">Kỹ năng</p>
-                                        <textarea name="skill-input" class="form__group-input form-input min-height-80px" placeholder="Nhóm kỹ năng, công cụ, mức độ."></textarea>
-                                    </div>
-        
-                                    <div class="form__group" data-js="pj">
-                                        <p class="form__group-title">Dự án</p>
-                                        <input name="pj-name" type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Tên dự án · Vai trò">
-                                        <input name="pj-link" type="url" class="form__group-input form-input margin-bottom-8px" placeholder="Link GitHub/Live">
-                                        <textarea name="pj-bullet" class="form__group-input form-input min-height-80px" placeholder="3 bullet: mục tiêu, công nghệ, kết quả."></textarea>
-                                    </div>
-        
-                                    <div class="form__group" data-js="edu">
-                                        <p class="form__group-title">Học vấn</p>
-                                        <input name="edu-school" type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Trường · Chuyên ngành">
-                                        <input name="edu-time" type="text" class="form__group-input form-input" placeholder="Thời gian">
-                                    </div>
-        
-                                    <div class="form__group" data-js="subject">
-                                        <p class="form__group-title">Môn học trọng điểm</p>
-                                        <textarea name="subject-input" class="form__group-input form-input min-height-80px" placeholder="Môn học trọng điểm"></textarea>
-                                    </div>
-
-                                    <div class="form__group" data-js="active">
-                                        <p class="form__group-title">Hoạt động / Câu lạc bộ</p>
-                                        <textarea name="active-input" class="form__group-input form-input min-height-80px" placeholder="Câu lạc bộ · Vai trò"></textarea>
-                                    </div>
-
-                                    <div class="form__group" data-js="cert">
-                                        <p class="form__group-title">Chứng chỉ</p>
-                                        <textarea name="cert-input" class="form__group-input form-input min-height-80px" placeholder="Liệt kê chứng chỉ liên quan."></textarea>
-                                    </div>
-        
-                                    <div class="form__group" data-js="link">
-                                        <p class="form__group-title">Liên kết</p>
-                                        <textarea name="link-input" class="form__group-input form-input min-height-80px" placeholder="LinkedIn · Portfolio · Bài viết."></textarea>
+                                    <div>
+                                        <div class="form__group" data-js="summary">
+                                            <p class="form__group-title">Tóm tắt</p>
+                                            <textarea name="summary-input" class="form__group-input form-input min-height-80px" placeholder="2 - 4 dòng nêu điểm mạnh và mục tiêu."></textarea>
+                                        </div>
+    
+                                        <div class="form__group" data-js="intern">
+                                            <p class="form__group-title">Mục tiêu thực tập</p>
+                                            <textarea name="intern-input" class="form__group-input form-input min-height-80px" placeholder="Mục tiêu thực tập"></textarea>
+                                        </div>
+    
+                                        <div class="form__group" data-js="fresher">
+                                            <p class="form__group-title">Mục tiêu nghề nghiệp ngắn hạn</p>
+                                            <textarea name="fresher-input" class="form__group-input form-input min-height-80px" placeholder="Mục tiêu nghề nghiệp ngắn hạn"></textarea>
+                                        </div>
+            
+                                        <div class="form__group" data-js="exp">
+                                            <p class="form__group-title">Kinh nghiệm</p>
+                                            <input name="exp-company" type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Công ty · Chức danh">
+                                            <input name="exp-time" type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Thời gian · Địa điểm">
+                                            <textarea name="exp-bullet" class="form__group-input form-input min-height-80px" placeholder="3 bullet mô tả kết quả và đóng góp."></textarea>
+                                        </div>
+    
+                                        <div class="form__group" data-js="skill">
+                                            <p class="form__group-title">Kỹ năng</p>
+                                            <textarea name="skill-input" class="form__group-input form-input min-height-80px" placeholder="Nhóm kỹ năng, công cụ, mức độ."></textarea>
+                                        </div>
+            
+                                        <div class="form__group" data-js="pj">
+                                            <p class="form__group-title">Dự án</p>
+                                            <input name="pj-name" type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Tên dự án · Vai trò">
+                                            <input name="pj-link" type="url" class="form__group-input form-input margin-bottom-8px" placeholder="Link GitHub/Live">
+                                            <textarea name="pj-bullet" class="form__group-input form-input min-height-80px" placeholder="3 bullet: mục tiêu, công nghệ, kết quả."></textarea>
+                                        </div>
+            
+                                        <div class="form__group" data-js="edu">
+                                            <p class="form__group-title">Học vấn</p>
+                                            <input name="edu-school" type="text" class="form__group-input form-input margin-bottom-8px" placeholder="Trường · Chuyên ngành">
+                                            <input name="edu-time" type="text" class="form__group-input form-input" placeholder="Thời gian">
+                                        </div>
+            
+                                        <div class="form__group" data-js="subject">
+                                            <p class="form__group-title">Môn học trọng điểm</p>
+                                            <textarea name="subject-input" class="form__group-input form-input min-height-80px" placeholder="Môn học trọng điểm"></textarea>
+                                        </div>
+    
+                                        <div class="form__group" data-js="active">
+                                            <p class="form__group-title">Hoạt động / Câu lạc bộ</p>
+                                            <textarea name="active-input" class="form__group-input form-input min-height-80px" placeholder="Câu lạc bộ · Vai trò"></textarea>
+                                        </div>
+    
+                                        <div class="form__group" data-js="cert">
+                                            <p class="form__group-title">Chứng chỉ</p>
+                                            <textarea name="cert-input" class="form__group-input form-input min-height-80px" placeholder="Liệt kê chứng chỉ liên quan."></textarea>
+                                        </div>
+            
+                                        <div class="form__group" data-js="link">
+                                            <p class="form__group-title">Liên kết</p>
+                                            <textarea name="link-input" class="form__group-input form-input min-height-80px" placeholder="LinkedIn · Portfolio · Bài viết."></textarea>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -170,76 +177,87 @@
                         <h2 data-key="role"></h2>
                         <div class="cv__contact">
                             <div>
-                                Email:
                                 <span data-key="email"></span>
                             </div>
                             <div>
-                                Số điện thoại:
                                 <span data-key="phone"></span>
                             </div>
                             <div>
-                                Địa điểm:
                                 <span data-key="location"></span>
                             </div>
                             <div>
-                                GitHub:
                                 <span data-key="link"></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="cv__section">
-                    <section class="cv__section-item" data-slot="summary">
+                    <section class="cv__section-item hidden" data-slot="summary">
                         <h3 class="cv__section-title">TÓM TẮT</h3>
                         <div data-key="summary" class="multiline"></div>
                     </section>
 
-                    <section class="cv__section-item" data-slot="intern">
+                    <section class="cv__section-item hidden" data-slot="intern">
                         <h3 class="cv__section-title">MỤC TIÊU THỰC TẬP</h3>
                         <div data-key="intern" class="multiline"></div>
                     </section>
 
-                    <section class="cv__section-item" data-slot="skills">
+                    <section class="cv__section-item hidden" data-slot="fresher">
+                        <h3 class="cv__section-title">MỤC TIÊU NGHỀ NGHIỆP NGẮN HẠN</h3>
+                        <div data-key="fresher" class="multiline"></div>
+                    </section>
+
+                    <section class="cv__section-item hidden" data-slot="skills">
                         <h3 class="cv__section-title">KỸ NĂNG</h3>
                         <div data-key="skills" class="multiline"></div>
                     </section>
 
-                    <section class="cv__section-item" data-slot="experience">
+                    <section class="cv__section-item hidden" data-slot="experience">
                         <h3 class="cv__section-title">KINH NGHIỆM</h3>
                         <div data-key="expCompany"></div>
                         <div data-key="expTime"></div>
                         <div data-key="expBullet" class="multiline"></div>
                     </section>
 
-                    <section class="cv__section-item" data-slot="projects">
+                    <section class="cv__section-item hidden" data-slot="projects">
                         <h3 class="cv__section-title">DỰ ÁN</h3>
                         <div data-key="projectName"></div>
                         <div data-key="projectLink"></div>
                         <div data-key="projectBullet" class="multiline"></div>
                     </section>
 
-                    <section class="cv__section-item" data-slot="education">
+                    <section class="cv__section-item hidden" data-slot="feFW">
+                        <h3 class="cv__section-title">FE Frameworks & Ecosystem</h3>
+                        <div data-key="feFW" class="multiline"></div>
+                    </section>
+
+                    <section class="cv__section-item hidden" data-slot="feStack">
+                        <h3 class="cv__section-title">FE Stack</h3>
+                        <div data-key="feStack" class="multiline"></div>
+                    </section>
+
+                    <section class="cv__section-item hidden" data-slot="education">
                         <h3 class="cv__section-title">HỌC VẤN</h3>
                         <div data-key="eduSchool"></div>
                         <div data-key="eduTime"></div>
                     </section>
 
-                    <section class="cv__section-item" data-slot="subject">
+                    <section class="cv__section-item hidden" data-slot="subject">
                         <h3 class="cv__section-title">MÔN HỌC TRỌNG ĐIỂM</h3>
                         <div data-key="subject" class="multiline"></div>
                     </section>
 
-                    <section class="cv__section-item" data-slot="active">
+                    <section class="cv__section-item hidden" data-slot="active">
                         <h3 class="cv__section-title">HOẠT ĐỘNG / CÂU LẠC BỘ</h3>
                         <div data-key="active" class="multiline"></div>
                     </section>
 
-                    <section class="cv__section-item" data-slot="certs">
+                    <section class="cv__section-item hidden" data-slot="certs">
                         <h3 class="cv__section-title">CHỨNG CHỈ</h3>
                         <div data-key="certs" class="multiline"></div>
                     </section>
 
-                    <section class="cv__section-item" data-slot="links">
+                    <section class="cv__section-item hidden" data-slot="links">
                         <h3 class="cv__section-title">LIÊN KẾT</h3>
                         <div data-key="links" class="multiline"></div>
                     </section>

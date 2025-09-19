@@ -21,9 +21,13 @@ const selectDiv = document.querySelectorAll('[data-select="select-div"]')
 
 selectBtns.forEach(function(current, index) {
     current.addEventListener('click', function(e) {
+        location.hash = this.id
         let currentDiv = selectDiv[index]
         let selectActive = document.querySelector('.select-active')
         let notHidden = document.querySelector('.focus')
+        if(currentDiv === notHidden) {
+            return
+        }
 
         selectActive.classList.remove('select-active')
         current.classList.add('select-active')
@@ -32,6 +36,12 @@ selectBtns.forEach(function(current, index) {
         notHidden.classList.add('hidden')
         notHidden.classList.remove('focus')
     })
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+    let active = location.hash.slice(1)
+    let activeBtn = document.getElementById(active)
+    activeBtn.click()
 })
 
 // Mobile
