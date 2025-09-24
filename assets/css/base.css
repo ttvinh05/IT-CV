@@ -26,6 +26,7 @@ html {
     --footer: #fff;
     --btn: #1e88e5;
     --toggle: #405466;
+    --header: #fff;
 }
 
 /* font */
@@ -174,6 +175,7 @@ textarea {
     --neutral-800: #151B23;
     --btn: #c9cdd3;
     --toggle: #ebe7e7;
+    --header: #1f2833;
 } 
 
 
